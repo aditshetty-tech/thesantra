@@ -1,0 +1,90 @@
+/* login.css - sign in page (needs base.css). register.html also uses this file. */
+
+.auth-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(100vh - 160px);
+}
+
+/* left panel */
+.auth-aside {
+    background: var(--forest-deep);
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    padding: 70px 60px;
+    position: relative;
+    overflow: hidden;
+}
+.auth-aside::after {
+    content: '';
+    position: absolute;
+    right: -90px;
+    bottom: -90px;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(203, 222, 211, 0.22);
+    border-radius: 50%;
+}
+.auth-aside-inner { max-width: 44ch; position: relative; z-index: 1; }
+.auth-aside-eyebrow { font-size: 10px; text-transform: uppercase; letter-spacing: 0.3em; color: var(--sand); margin-bottom: 18px; }
+.auth-aside-title { font-family: 'Cinzel', serif; font-size: 30px; line-height: 1.3; margin-bottom: 18px; }
+.auth-aside-text { font-family: 'Cormorant Garamond', serif; font-size: 18px; line-height: 1.65; color: var(--mint); margin-bottom: 34px; }
+
+.auth-aside-stats { display: flex; gap: 38px; flex-wrap: wrap; margin: 0; }
+.auth-aside-stats dt { font-family: 'Cinzel', serif; font-size: 22px; color: var(--sand); }
+.auth-aside-stats dd { font-size: 10px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--mint); margin: 4px 0 0; }
+
+.auth-aside-list { list-style: none; }
+.auth-aside-list li { font-size: 13.5px; color: var(--mint); padding-left: 24px; position: relative; margin-bottom: 12px; }
+.auth-aside-list li::before { content: '\2713'; position: absolute; left: 0; color: var(--sand); }
+
+/* right panel */
+.auth-panel { display: flex; align-items: center; justify-content: center; padding: 70px 40px; background: var(--paper); }
+.auth-card { width: 100%; max-width: 420px; }
+.auth-card.wide { max-width: 560px; }
+.auth-title { font-family: 'Cinzel', serif; font-size: 30px; color: var(--forest-deep); margin-bottom: 8px; }
+.auth-subtitle { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; color: var(--muted); margin-bottom: 34px; }
+
+.auth-form .form-group { margin-bottom: 20px; }
+.form-label { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted); margin-bottom: 8px; }
+
+.input-shell { position: relative; display: flex; align-items: center; }
+.input-shell > i { position: absolute; left: 14px; font-size: 14px; color: var(--sage); pointer-events: none; }
+.input-shell .form-input { padding-left: 40px; }
+.reveal-btn { position: absolute; right: 10px; background: none; border: none; color: var(--sage); font-size: 14px; cursor: pointer; padding: 4px 6px; }
+.reveal-btn:hover { color: var(--forest); }
+
+.form-input {
+    width: 100%;
+    border: 1px solid var(--line);
+    background: #FFF;
+    padding: 13px 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: var(--ink);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.form-input:focus { outline: none; border-color: var(--forest); box-shadow: 0 0 0 3px var(--mint); }
+.form-input::placeholder { color: #A9B3AE; }
+.field-hint { font-size: 11px; color: var(--sage); margin-top: 7px; line-height: 1.5; }
+
+.form-actions { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 26px; }
+.remember-me { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.remember-me input { accent-color: var(--forest); width: 14px; height: 14px; }
+.forgot-pass { font-size: 12px; color: var(--forest); text-decoration: none; border-bottom: 1px solid var(--sage); }
+
+.auth-divider { display: flex; align-items: center; gap: 14px; margin: 26px 0 18px; color: var(--sage); font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; }
+.auth-divider::before, .auth-divider::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+
+.auth-footer { text-align: center; font-size: 12.5px; color: var(--muted); margin-top: 28px; }
+.auth-footer a { color: var(--forest); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--sage); }
+
+.site-footer { margin-top: 0; }
+
+@media (max-width: 991px) {
+    .auth-split { grid-template-columns: 1fr; }
+    .auth-aside { padding: 50px 26px; }
+    .auth-aside::after { display: none; }
+    .auth-panel { padding: 50px 22px; }
+}

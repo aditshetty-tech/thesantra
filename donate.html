@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANTRA | Donate Your Clothes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="donate.css">
+</head>
+<body>
+
+    <div class="promo-strip">
+        Free doorstep pickup on donations of 3 garments or more &mdash; <a href="donate.html">book a collection</a>
+    </div>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light p-0 w-100">
+            <div class="container-fluid px-0">
+                <div class="brand-logo">
+                    <a href="index.html" class="brand-title">Santra</a>
+                    <span class="brand-subtitle">Donate &middot; Renew &middot; Regrow</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#santraNav" aria-controls="santraNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="santraNav">
+                    <ul class="nav-links navbar-nav mb-2 mb-lg-0 me-lg-4">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="catalogue.html">Catalogue</a></li>
+                        <li class="nav-item"><a href="donate.html" class="nav-donate active">Donate Clothes</a></li>
+                        <li class="nav-item"><a href="sustainability.html">Our Impact</a></li>
+                        <li class="nav-item"><a href="login.html">Login</a></li>
+                        <li class="nav-item"><a href="register.html">Register</a></li>
+                    </ul>
+                    <div class="input-group site-search">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <label for="siteSearch" class="visually-hidden">Search</label>
+                        <input type="search" id="siteSearch" class="form-control" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="tree-ticker" aria-label="Trees planted by Santra donors so far">
+        <div class="ticker-track">
+            <span class="label">Together we've planted</span><span>1,284,506 trees</span><span class="label">Together we've planted</span><span>1,284,506 trees</span><span class="label">Together we've planted</span><span>1,284,506 trees</span><span class="label">Together we've planted</span><span>1,284,506 trees</span><span class="label">Together we've planted</span><span>1,284,506 trees</span><span class="label">Together we've planted</span><span>1,284,506 trees</span>
+        </div>
+    </div>
+
+    <main>
+        <section class="donate-hero">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="donate-title">Give us the clothes<br>you stopped wearing</h1>
+                        <p class="donate-lede">Nothing you send is thrown away. Wearable pieces are mended and resold, the rest becomes fibre for the next collection, and a native tree goes into the ground in your name for every garment we receive.</p>
+                        <ul class="donate-points">
+                            <li>Free doorstep pickup on 3 garments or more</li>
+                            <li>&#8377;200 store credit per garment, capped at &#8377;3,000 a year</li>
+                            <li>A planting certificate with your name, species and GPS pin</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="pickup-card" action="#" method="POST">
+                            <h2 class="pickup-title">Book a pickup</h2>
+                            <p class="pickup-sub">We collect between 9am and 7pm, seven days a week.</p>
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="field-label" for="dname">Full name</label>
+                                    <input type="text" id="dname" class="field-input" placeholder="Aarav Mehta" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="field-label" for="dphone">Phone</label>
+                                    <input type="tel" id="dphone" class="field-input" placeholder="+91 98765 43210" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="field-label" for="daddr">Pickup address</label>
+                                    <input type="text" id="daddr" class="field-input" placeholder="Flat, street, area" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="field-label" for="dcity">City</label>
+                                    <select id="dcity" class="field-input" required>
+                                        <option value="">Choose a city</option>
+                                        <option>Pune</option>
+                                        <option>Mumbai</option>
+                                        <option>Bengaluru</option>
+                                        <option>Delhi NCR</option>
+                                        <option>Hyderabad</option>
+                                        <option>Kolkata</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="field-label" for="ddate">Preferred date</label>
+                                    <input type="date" id="ddate" class="field-input" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="field-label" for="dcount">How many garments? <span id="countValue">6</span></label>
+                                    <input type="range" class="form-range" id="dcount" min="1" max="40" value="6">
+                                    <p class="pickup-estimate">That plants <strong id="treeEstimate">6</strong> trees and earns <strong id="creditEstimate">&#8377;1,200</strong> in credit.</p>
+                                </div>
+                                <div class="col-12">
+                                    <label class="field-label" for="dtreename">Name to print on the planting certificate</label>
+                                    <input type="text" id="dtreename" class="field-input" placeholder="Yours, or someone you'd like to honour">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-leaf w-100 mt-4">Confirm pickup</button>
+                            <p class="pickup-foot">Prefer to drop off? <a href="#centres">Find a counter near you</a>.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="accepted-section" id="accepted">
+            <div class="container">
+                <h2 class="section-title text-center">What you can send</h2>
+                <p class="section-lede mx-auto text-center accepted-lede">Condition genuinely does not matter. Holes, stains and missing buttons all have a route through the mill.</p>
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6">
+                        <div class="accept-card yes">
+                            <h3>Send it over</h3>
+                            <ul>
+                                <li>Shirts, kurtas, dresses, trousers, denim</li>
+                                <li>Knitwear, coats, jackets, blazers</li>
+                                <li>Saris, dupattas, bed linen, curtains, towels</li>
+                                <li>Shoes and bags, even single shoes</li>
+                                <li>Torn, stained, shrunk or faded anything</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="accept-card no">
+                            <h3>Please keep these back</h3>
+                            <ul>
+                                <li>Wet or mould-damaged fabric &mdash; it spoils the whole bag</li>
+                                <li>Items contaminated with oil, paint or chemicals</li>
+                                <li>Medical or PPE textiles</li>
+                                <li>Foam-filled mattresses and pillows</li>
+                                <li>Anything you might miss in a month</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="journey-section">
+            <div class="container">
+                <h2 class="section-title text-center">Where your bag goes</h2>
+                <ol class="journey-list">
+                    <li>
+                        <span class="journey-day">Day 0</span>
+                        <h3>Collected</h3>
+                        <p>Our rider weighs the bag at your door and you get a receipt on SMS with the garment count.</p>
+                    </li>
+                    <li>
+                        <span class="journey-day">Day 2</span>
+                        <h3>Sorted by hand</h3>
+                        <p>Eleven sorters in Pune split the bag by fibre, colour and condition. Roughly 38% can be repaired and resold as it is.</p>
+                    </li>
+                    <li>
+                        <span class="journey-day">Day 9</span>
+                        <h3>Repaired or shredded</h3>
+                        <p>Wearable pieces go to the mending workshop. The rest is shredded, re-spun and woven into next season's cloth.</p>
+                    </li>
+                    <li>
+                        <span class="journey-day">Day 30</span>
+                        <h3>Trees in the ground</h3>
+                        <p>Your saplings are planted at one of nine restoration sites and the certificate lands in your account.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="centres-section" id="centres">
+            <div class="container">
+                <h2 class="section-title text-center">Drop-off counters</h2>
+                <p class="section-lede mx-auto text-center accepted-lede">No appointment needed. Bring anything, in any bag.</p>
+                <div class="table-wrapper">
+                    <table class="data-table centres-table">
+                        <caption class="visually-hidden">Santra donation drop-off counters and their opening hours</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">City</th>
+                                <th scope="col">Counter</th>
+                                <th scope="col">Open</th>
+                                <th scope="col">Accepts</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Pune</th>
+                                <td>Koregaon Park, Lane 7</td>
+                                <td>Mon&ndash;Sun, 10am&ndash;8pm</td>
+                                <td>All textiles, footwear</td>
+                                <td><a href="#" class="centre-link">Directions</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mumbai</th>
+                                <td>Bandra West, Hill Road</td>
+                                <td>Mon&ndash;Sat, 11am&ndash;9pm</td>
+                                <td>All textiles, footwear</td>
+                                <td><a href="#" class="centre-link">Directions</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Bengaluru</th>
+                                <td>Indiranagar, 12th Main</td>
+                                <td>Mon&ndash;Sun, 10am&ndash;8pm</td>
+                                <td>All textiles</td>
+                                <td><a href="#" class="centre-link">Directions</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Delhi NCR</th>
+                                <td>Hauz Khas Village</td>
+                                <td>Tue&ndash;Sun, 11am&ndash;7pm</td>
+                                <td>All textiles, home linen</td>
+                                <td><a href="#" class="centre-link">Directions</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Hyderabad</th>
+                                <td>Jubilee Hills, Road 36</td>
+                                <td>Mon&ndash;Sat, 10am&ndash;7pm</td>
+                                <td>All textiles</td>
+                                <td><a href="#" class="centre-link">Directions</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="tiers-section">
+            <div class="container">
+                <h2 class="section-title text-center">The more you send, the more grows</h2>
+                <div class="row g-4 mt-2">
+                    <div class="col-md-4">
+                        <div class="tier-card">
+                            <h3 class="tier-name">Sapling</h3>
+                            <p class="tier-range">1&ndash;5 garments a year</p>
+                            <ul class="tier-list">
+                                <li>&#8377;200 credit per garment</li>
+                                <li>Digital planting certificate</li>
+                                <li>Free drop-off at any counter</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tier-card featured">
+                            <h3 class="tier-name">Grove</h3>
+                            <p class="tier-range">6&ndash;15 garments a year</p>
+                            <ul class="tier-list">
+                                <li>Everything in Sapling</li>
+                                <li>Free doorstep pickup</li>
+                                <li>Named marker at the planting site</li>
+                                <li>Early access to new renewals</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tier-card">
+                            <h3 class="tier-name">Canopy</h3>
+                            <p class="tier-range">16+ garments a year</p>
+                            <ul class="tier-list">
+                                <li>Everything in Grove</li>
+                                <li>One free repair on any piece you own</li>
+                                <li>Annual survival report on your trees</li>
+                                <li>Invitation to a planting weekend</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title text-center">Questions we get asked</h2>
+                <div class="accordion faq-accordion" id="donateFaq">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Do I really get a tree for every single garment?</button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#donateFaq">
+                            <div class="accordion-body">Yes, counted per item and not per bag. A bag of nine shirts plants nine trees. Planting happens in batches at the start of each month, so a donation made on the 20th goes in with the following month's batch.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Can I plant in someone else's name?</button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#donateFaq">
+                            <div class="accordion-body">You can. Put their name in the certificate field when you book and we'll email the certificate to them instead, with a note saying who donated on their behalf. People use this for birthdays and for memorials.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">What happens to fibres that can't be recycled?</button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#donateFaq">
+                            <div class="accordion-body">About 6% of what we receive is blended synthetic that our mill can't process. That fraction goes to a cement kiln for energy recovery rather than to landfill, and we report the exact tonnage in our annual impact report.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Is my credit transferable?</button>
+                        </h3>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#donateFaq">
+                            <div class="accordion-body">Credit sits in your Santra account for 24 months and can be sent to any other account by email address. It can be spent on anything in the catalogue, including repairs of clothes you already own.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid row g-4">
+            <div class="col-6 col-lg-3">
+                <h4 class="footer-head">Donate</h4>
+                <ul class="footer-list">
+                    <li><a href="donate.html">Book a pickup</a></li>
+                    <li><a href="donate.html#centres">Drop-off centres</a></li>
+                    <li><a href="donate.html#accepted">What we accept</a></li>
+                    <li><a href="sustainability.html#calculator">Your impact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h4 class="footer-head">Shop Renewed</h4>
+                <ul class="footer-list">
+                    <li><a href="catalogue.html">Full catalogue</a></li>
+                    <li><a href="catalogue.html">New in</a></li>
+                    <li><a href="catalogue.html">Renewal standards</a></li>
+                    <li><a href="register.html">Join the club</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h4 class="footer-head">The Brand</h4>
+                <ul class="footer-list">
+                    <li><a href="sustainability.html">Our impact</a></li>
+                    <li><a href="sustainability.html#sourcing">Where we work</a></li>
+                    <li><a href="sustainability.html#milestones">Our story</a></li>
+                    <li><a href="login.html">Client sign in</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 footer-signup">
+                <h4 class="footer-head">Plant With Us</h4>
+                <p class="footer-note">Get a note whenever your donated pieces are renewed and your trees go in the ground.</p>
+                <label for="footerEmail" class="visually-hidden">Email address</label>
+                <input type="email" id="footerEmail" class="form-control mb-2" placeholder="Email address">
+                <button class="btn-leaf w-100" type="button">Keep me posted</button>
+            </div>
+        </div>
+        <div class="footer-base">
+            <p class="copyright">&copy; 2026 Santra. Every garment donated plants a tree in your name.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="donate.js"></script>
+</body>
+</html>

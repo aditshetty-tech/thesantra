@@ -1,0 +1,102 @@
+/* donate.css - donate page (needs base.css) */
+
+/* hero + booking form */
+.donate-hero { background: var(--mint); padding: 70px 40px; }
+.donate-title { font-family: 'Cinzel', serif; font-size: 44px; line-height: 1.15; color: var(--forest-deep); margin-bottom: 22px; }
+.donate-lede { font-family: 'Cormorant Garamond', serif; font-size: 19px; line-height: 1.65; color: #3F4F49; max-width: 52ch; margin-bottom: 26px; }
+.donate-points { list-style: none; }
+.donate-points li { font-size: 13px; color: var(--forest); padding-left: 24px; position: relative; margin-bottom: 10px; letter-spacing: 0.04em; }
+.donate-points li::before { content: '\2713'; position: absolute; left: 0; }
+
+.pickup-card { background: #FFF; border: 1px solid var(--sage); padding: 40px 38px; }
+.pickup-title { font-family: 'Cinzel', serif; font-size: 22px; color: var(--forest-deep); margin-bottom: 6px; }
+.pickup-sub { font-size: 12.5px; color: var(--muted); margin-bottom: 26px; }
+
+.field-label { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted); margin-bottom: 7px; }
+.field-label span { color: var(--forest); font-weight: 600; }
+.field-input {
+    width: 100%;
+    border: 1px solid var(--line);
+    background: #FCFCFB;
+    padding: 12px 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: var(--ink);
+    transition: border-color 0.25s ease, background 0.25s ease;
+}
+.field-input:focus { outline: none; border-color: var(--forest); background: #FFF; }
+.field-input::placeholder { color: #A9B3AE; }
+
+.pickup-estimate { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+.pickup-estimate strong { color: var(--forest); font-family: 'Cinzel', serif; font-size: 14px; }
+.pickup-foot { font-size: 12px; color: var(--muted); text-align: center; margin-top: 16px; }
+.pickup-foot a { color: var(--forest); }
+
+/* accepted */
+.accepted-section { padding: 90px 40px; }
+.accepted-lede { margin-top: 14px; }
+.accept-card { border: 1px solid var(--line); padding: 34px 32px; height: 100%; background: #FFF; }
+.accept-card h3 { font-family: 'Cinzel', serif; font-size: 18px; margin-bottom: 18px; }
+.accept-card ul { list-style: none; }
+.accept-card li { font-size: 13.5px; color: var(--muted); padding-left: 26px; position: relative; margin-bottom: 11px; line-height: 1.6; }
+.accept-card.yes { border-top: 4px solid var(--forest); }
+.accept-card.yes h3 { color: var(--forest-deep); }
+.accept-card.yes li::before { content: '\2713'; position: absolute; left: 0; color: var(--forest); }
+.accept-card.no { border-top: 4px solid var(--sand); }
+.accept-card.no h3 { color: var(--sand-ink); }
+.accept-card.no li::before { content: '\2715'; position: absolute; left: 0; color: var(--sand-ink); }
+
+/* journey */
+.journey-section { background: var(--forest-deep); padding: 90px 40px; }
+.journey-section .section-title { color: #FFF; margin-bottom: 50px; }
+.journey-list { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; max-width: 1150px; margin: 0 auto; }
+.journey-list li { padding: 0 26px; border-left: 1px solid rgba(203, 222, 211, 0.25); }
+.journey-list li:first-child { border-left: none; padding-left: 0; }
+.journey-day { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 0.24em; color: var(--sand); margin-bottom: 12px; }
+.journey-list h3 { font-family: 'Cinzel', serif; font-size: 17px; color: #FFF; margin-bottom: 10px; }
+.journey-list p { font-size: 13px; color: var(--mint); line-height: 1.7; }
+
+/* centres table */
+.centres-section { padding: 90px 40px; }
+.table-wrapper { margin-top: 34px; }
+.centres-table { min-width: 720px; }
+.centre-link { font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--forest); text-decoration: none; border-bottom: 1px solid var(--sage); }
+
+/* tiers */
+.tiers-section { background: var(--stone); padding: 90px 40px; }
+.tier-card { background: #FFF; border: 1px solid var(--line); padding: 36px 30px; height: 100%; }
+.tier-card.featured { border: 1px solid var(--forest); box-shadow: 0 18px 40px rgba(37, 66, 58, 0.12); }
+.tier-name { font-family: 'Cinzel', serif; font-size: 20px; color: var(--forest-deep); margin-bottom: 6px; }
+.tier-range { font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--forest); margin-bottom: 20px; }
+.tier-list { list-style: none; }
+.tier-list li { font-size: 13px; color: var(--muted); padding-left: 20px; position: relative; margin-bottom: 10px; }
+.tier-list li::before { content: '\2013'; position: absolute; left: 0; color: var(--sage); }
+
+/* faq */
+.faq-section { padding: 90px 40px 40px; }
+.faq-accordion { max-width: 860px; margin: 40px auto 0; }
+.faq-accordion .accordion-item { border: none; border-bottom: 1px solid var(--line); background: transparent; }
+.faq-accordion .accordion-button {
+    background: transparent;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    color: var(--forest-deep);
+    padding: 22px 0;
+    box-shadow: none;
+}
+.faq-accordion .accordion-button:not(.collapsed) { color: var(--forest); background: transparent; }
+.faq-accordion .accordion-button:focus { box-shadow: none; }
+.faq-accordion .accordion-button::after { filter: hue-rotate(90deg); }
+.faq-accordion .accordion-body { font-size: 13.5px; color: var(--muted); line-height: 1.8; padding: 0 0 22px; max-width: 70ch; }
+
+@media (max-width: 991px) {
+    .journey-list { grid-template-columns: 1fr 1fr; gap: 30px 0; }
+    .journey-list li:nth-child(3) { border-left: none; padding-left: 0; }
+}
+@media (max-width: 768px) {
+    .donate-hero, .accepted-section, .journey-section, .centres-section, .tiers-section, .faq-section { padding: 56px 22px; }
+    .donate-title { font-size: 32px; }
+    .pickup-card { padding: 28px 22px; }
+    .journey-list { grid-template-columns: 1fr; }
+    .journey-list li { border-left: none; padding-left: 0; }
+}

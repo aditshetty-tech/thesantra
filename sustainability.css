@@ -1,0 +1,156 @@
+/* sustainability.css - our impact page (needs base.css) */
+
+/* sub nav */
+.subnav { background: var(--forest-deep); position: sticky; top: 84px; z-index: 990; }
+.subnav-pills { padding: 12px 0; gap: 4px; flex-wrap: nowrap; overflow-x: auto; }
+.subnav-pills .nav-link {
+    color: var(--mint);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 8px 16px;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+.subnav-pills .nav-link:hover { color: #FFF; }
+.subnav-pills .nav-link.active { background: var(--sage); color: var(--forest-deep); }
+
+/* hero */
+.sdg-hero { background: var(--mint); padding: 76px 40px; }
+.sdg-hero-title { font-family: 'Cinzel', serif; font-size: 40px; line-height: 1.18; color: var(--forest-deep); margin-bottom: 18px; }
+.sdg-hero-desc { font-family: 'Cormorant Garamond', serif; font-size: 19px; line-height: 1.65; color: #3F4F49; max-width: 62ch; margin-bottom: 24px; }
+.claim-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.claim-badge {
+    display: inline-flex;
+    align-items: center;
+    background: var(--forest-deep);
+    color: #FFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 11px 20px;
+    border-radius: 100px;
+}
+.sdg-badge-lg {
+    width: 120px;
+    height: 120px;
+    background: var(--sand);
+    color: var(--forest-deep);
+    font-family: 'Cinzel', serif;
+    font-size: 46px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+/* section shell */
+.section-container { padding: 84px 40px 20px; max-width: 1300px; margin: 0 auto; }
+.section-container.pt-0 { padding-top: 20px; }
+.section-title.light { color: #FFF; }
+
+/* impact stats */
+.impact-stat { text-align: center; }
+.stat-number-lg { font-family: 'Cinzel', serif; font-size: 32px; color: var(--forest); margin-bottom: 6px; }
+.stat-label-dark { font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); }
+
+/* calculator */
+.calculator-card { background: #FFF; border: 1px solid var(--sage); border-top: 4px solid var(--forest); padding: 50px; }
+.calc-title { font-family: 'Cinzel', serif; font-size: 23px; color: var(--forest-deep); margin-bottom: 14px; }
+.calc-desc { font-size: 13.5px; color: var(--muted); line-height: 1.75; }
+.calc-slider-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--forest-deep); display: block; margin-bottom: 12px; }
+.calc-slider-label strong { font-family: 'Cinzel', serif; color: var(--forest); font-size: 15px; }
+.form-range { accent-color: var(--forest); }
+.form-range::-webkit-slider-thumb { background: var(--forest); }
+.form-range::-moz-range-thumb { background: var(--forest); }
+.calc-result-number { font-family: 'Cinzel', serif; font-size: 22px; color: var(--forest-deep); }
+.calc-result-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--sage); margin-top: 4px; }
+.calc-footnote { font-size: 10.5px; color: var(--sage); margin-top: 22px; }
+
+/* pillars */
+.pillar-card { background: #FFF; border: 1px solid var(--line); padding: 36px 28px; height: 100%; text-align: center; transition: transform 0.3s ease; }
+.pillar-card:hover { transform: translateY(-5px); }
+.pillar-icon { font-size: 28px; color: var(--forest); margin-bottom: 16px; display: block; }
+.pillar-title { font-family: 'Cinzel', serif; font-size: 16px; color: var(--forest-deep); margin-bottom: 12px; }
+.pillar-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+/* planting sites */
+.sourcing-section { background: var(--forest-deep); padding: 90px 40px; }
+.sourcing-intro { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: var(--mint); text-align: center; max-width: 68ch; margin: 0 auto; }
+.sourcing-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(203,222,211,0.18); padding: 30px 24px; height: 100%; text-align: center; }
+.sourcing-icon { font-size: 20px; color: var(--sand); margin-bottom: 14px; display: block; }
+.sourcing-place { font-family: 'Cinzel', serif; font-size: 15px; color: #FFF; margin-bottom: 10px; }
+.sourcing-detail { font-size: 12px; color: var(--mint); line-height: 1.7; }
+.sourcing-mill { font-size: 13px; color: var(--sage); text-align: center; max-width: 72ch; margin: 40px auto 0; line-height: 1.8; }
+
+/* certifications */
+.cert-badge {
+    width: 78px;
+    height: 78px;
+    border: 1px solid var(--sage);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: var(--forest);
+    margin: 0 auto 16px;
+    background: #FFF;
+}
+.cert-name { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+
+/* goals */
+.goals-section { background: var(--stone); padding: 84px 40px; }
+.goals-section .section-title { margin-bottom: 44px; }
+.goal-row { max-width: 820px; margin: 0 auto 26px; }
+.goal-label { display: flex; justify-content: space-between; gap: 20px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--forest-deep); margin-bottom: 8px; }
+.goal-label span:last-child { color: var(--forest); font-weight: 600; }
+.progress { height: 8px; background: #FFF; border-radius: 0; }
+.progress-bar { background: var(--forest); }
+
+/* timeline */
+.timeline { list-style: none; max-width: 760px; margin: 0 auto; border-left: 2px solid var(--sage); padding-left: 40px; }
+.timeline-item { position: relative; margin-bottom: 34px; }
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -47px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--forest);
+    border: 2px solid var(--paper);
+}
+.timeline-item.is-future::before { background: var(--sand); }
+.timeline-year { font-family: 'Cinzel', serif; font-size: 17px; color: var(--forest-deep); margin-bottom: 6px; }
+.timeline-item.is-future .timeline-year { color: var(--sand-ink); }
+.timeline-text { font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+
+/* cta */
+.sdg-cta { background: var(--forest); padding: 84px 40px; margin-top: 60px; }
+.cta-title { font-family: 'Cinzel', serif; font-size: 27px; letter-spacing: 0.1em; text-transform: uppercase; color: #FFF; margin-bottom: 12px; }
+.cta-desc { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 17px; color: var(--mint); margin-bottom: 30px; }
+.cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.sdg-cta .btn-leaf { background: #FFF; border-color: #FFF; color: var(--forest-deep); }
+.sdg-cta .btn-leaf:hover { background: var(--sand); border-color: var(--sand); color: var(--forest-deep); }
+
+.site-footer { margin-top: 0; }
+.footer-sdg-note { font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--forest); margin-bottom: 10px; }
+
+@media (max-width: 991px) {
+    .subnav { position: static; }
+}
+
+@media (max-width: 768px) {
+    .sdg-hero { padding: 54px 22px; }
+    .sdg-hero-title { font-size: 29px; }
+    .sdg-badge-lg { margin: 20px auto 0; }
+    .section-container { padding: 56px 22px 10px; }
+    .sourcing-section, .goals-section, .sdg-cta { padding: 56px 22px; }
+    .calculator-card { padding: 28px 22px; }
+    .timeline { padding-left: 28px; }
+    .timeline-item::before { left: -35px; }
+}

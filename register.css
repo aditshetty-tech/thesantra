@@ -1,0 +1,27 @@
+/* register.css - only what the register page adds on top of base.css and login.css */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 18px;
+}
+.form-grid .full-width { grid-column: 1 / -1; }
+
+.consent-group { margin: 6px 0 26px; }
+.consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.consent input { accent-color: var(--forest); width: 15px; height: 15px; margin-top: 3px; flex-shrink: 0; }
+
+select.form-input { appearance: none; background-image: none; cursor: pointer; }
+
+@media (max-width: 575px) {
+    .form-grid { grid-template-columns: 1fr; }
+}

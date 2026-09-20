@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANTRA | The Renewed Catalogue</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="catalogue.css">
+</head>
+<body>
+
+    <div class="promo-strip">
+        Free doorstep pickup on donations of 3 garments or more &mdash; <a href="donate.html">book a collection</a>
+    </div>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light p-0 w-100">
+            <div class="container-fluid px-0">
+                <div class="brand-logo">
+                    <a href="index.html" class="brand-title">Santra</a>
+                    <span class="brand-subtitle">Donate &middot; Renew &middot; Regrow</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#santraNav" aria-controls="santraNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="santraNav">
+                    <ul class="nav-links navbar-nav mb-2 mb-lg-0 me-lg-4">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="catalogue.html" class="active">Catalogue</a></li>
+                        <li class="nav-item"><a href="donate.html" class="nav-donate">Donate Clothes</a></li>
+                        <li class="nav-item"><a href="sustainability.html">Our Impact</a></li>
+                        <li class="nav-item"><a href="login.html">Login</a></li>
+                        <li class="nav-item"><a href="register.html">Register</a></li>
+                    </ul>
+                    <div class="input-group site-search">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <label for="siteSearch" class="visually-hidden">Search</label>
+                        <input type="search" id="siteSearch" class="form-control" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="tree-ticker" aria-label="Trees planted by Santra donors so far">
+        <div class="ticker-track">
+            <span class="label">Together we've planted</span><span>1,284,506 trees</span><span class="label">Together we've planted</span><span>1,284,506 trees</span><span class="label">Together we've planted</span><span>1,284,506 trees</span><span class="label">Together we've planted</span><span>1,284,506 trees</span><span class="label">Together we've planted</span><span>1,284,506 trees</span><span class="label">Together we've planted</span><span>1,284,506 trees</span>
+        </div>
+    </div>
+
+    <main>
+        <section class="cat-hero">
+            <div class="container">
+                <h1 class="cat-title">The Renewed Catalogue</h1>
+                <p class="cat-lede">Every piece here began as something someone posted back to us. Nothing is made from virgin fabric.</p>
+                <div class="cat-hero-stats">
+                    <span><strong>248</strong> pieces in stock</span>
+                    <span><strong>100%</strong> from donated fibre</span>
+                    <span><strong>1 tree</strong> planted per garment recovered</span>
+                </div>
+            </div>
+        </section>
+
+        <nav class="cat-chips" aria-label="Product categories">
+            <div class="container">
+                <ul>
+                    <li><a href="#" class="chip active">All</a></li>
+                    <li><a href="#" class="chip">Coats &amp; jackets</a></li>
+                    <li><a href="#" class="chip">Knitwear</a></li>
+                    <li><a href="#" class="chip">Shirts</a></li>
+                    <li><a href="#" class="chip">Trousers</a></li>
+                    <li><a href="#" class="chip">Dresses</a></li>
+                    <li><a href="#" class="chip">Footwear</a></li>
+                    <li><a href="#" class="chip">Accessories</a></li>
+                    <li><a href="#" class="chip">One-of-one repairs</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container cat-body">
+            <div class="row g-4">
+
+                <aside class="col-lg-3 cat-filters">
+                    <div class="filter-head">
+                        <h2>Filter</h2>
+                        <button type="button" class="filter-clear">Clear all</button>
+                    </div>
+
+                    <div class="filter-block">
+                        <h3 class="filter-title">How it was renewed</h3>
+                        <label class="filter-option"><input type="checkbox" checked> Remade from shredded fibre <span>112</span></label>
+                        <label class="filter-option"><input type="checkbox"> Repaired and resold <span>86</span></label>
+                        <label class="filter-option"><input type="checkbox"> Overdyed to hide wear <span>34</span></label>
+                        <label class="filter-option"><input type="checkbox"> Patchwork from offcuts <span>16</span></label>
+                    </div>
+
+                    <div class="filter-block">
+                        <h3 class="filter-title">Size</h3>
+                        <div class="size-grid">
+                            <label class="size-box"><input type="checkbox"><span>XS</span></label>
+                            <label class="size-box"><input type="checkbox"><span>S</span></label>
+                            <label class="size-box"><input type="checkbox"><span>M</span></label>
+                            <label class="size-box"><input type="checkbox"><span>L</span></label>
+                            <label class="size-box"><input type="checkbox"><span>XL</span></label>
+                            <label class="size-box"><input type="checkbox"><span>2XL</span></label>
+                        </div>
+                    </div>
+
+                    <div class="filter-block">
+                        <h3 class="filter-title">Condition</h3>
+                        <label class="filter-option"><input type="checkbox"> As new <span>64</span></label>
+                        <label class="filter-option"><input type="checkbox"> Gently worn <span>121</span></label>
+                        <label class="filter-option"><input type="checkbox"> Visible mend <span>63</span></label>
+                    </div>
+
+                    <div class="filter-block">
+                        <h3 class="filter-title">Colour</h3>
+                        <div class="swatch-row">
+                            <button type="button" class="swatch" style="background:#3B6255" aria-label="Forest"></button>
+                            <button type="button" class="swatch" style="background:#8BA49A" aria-label="Sage"></button>
+                            <button type="button" class="swatch" style="background:#CBDED3" aria-label="Mint"></button>
+                            <button type="button" class="swatch" style="background:#D2C49E" aria-label="Sand"></button>
+                            <button type="button" class="swatch" style="background:#E2DFDA" aria-label="Stone"></button>
+                            <button type="button" class="swatch" style="background:#1E2B26" aria-label="Ink"></button>
+                        </div>
+                    </div>
+
+                    <div class="filter-block">
+                        <h3 class="filter-title">Price</h3>
+                        <label for="priceRange" class="filter-range-label">Up to <span id="priceValue">&#8377;6,000</span></label>
+                        <input type="range" class="form-range" id="priceRange" min="500" max="8000" step="100" value="6000">
+                    </div>
+
+                    <div class="filter-block">
+                        <h3 class="filter-title">Trees planted</h3>
+                        <label class="filter-option"><input type="radio" name="trees"> 1 tree</label>
+                        <label class="filter-option"><input type="radio" name="trees"> 2&ndash;3 trees</label>
+                        <label class="filter-option"><input type="radio" name="trees"> 4 trees or more</label>
+                    </div>
+
+                    <div class="filter-donate">
+                        <h3>Donate, don't just shop</h3>
+                        <p>Send us three garments and we'll credit &#8377;600 to your account &mdash; plus three trees in your name.</p>
+                        <a href="donate.html" class="btn-leaf w-100">Book a pickup</a>
+                    </div>
+                </aside>
+
+                <div class="col-lg-9">
+                    <div class="results-bar">
+                        <p class="results-count">Showing <strong>12</strong> of 248 pieces</p>
+                        <div class="results-tools">
+                            <label for="sortBy">Sort by</label>
+                            <select id="sortBy" class="form-select cat-select">
+                                <option>Newest renewals</option>
+                                <option>Price: low to high</option>
+                                <option>Price: high to low</option>
+                                <option>Most trees planted</option>
+                                <option>Nearly sold out</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 cat-grid">
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Regrown wool coat">
+                                    <span class="cat-badge">Remade</span>
+                                    <button class="cat-save" type="button" aria-label="Save Regrown Wool Coat"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Regrown Wool Coat</h3>
+                                <p class="cat-origin">Woven from 4 donated coats, Panipat mill</p>
+                                <p class="cat-price">&#8377;4,999 <s>&#8377;8,400 new</s></p>
+                                <p class="cat-impact">Plants 4 trees &middot; Sizes S&ndash;XL</p>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Re-spun silk knit">
+                                    <span class="cat-badge">Remade</span>
+                                    <button class="cat-save" type="button" aria-label="Save Re-Spun Silk Knit"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Re-Spun Silk Knit</h3>
+                                <p class="cat-origin">Woven from 3 donated saris, Bhiwandi</p>
+                                <p class="cat-price">&#8377;2,699 <s>&#8377;4,100 new</s></p>
+                                <p class="cat-impact">Plants 3 trees &middot; Sizes XS&ndash;L</p>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Second life trousers">
+                                    <span class="cat-badge">Remade</span>
+                                    <button class="cat-save" type="button" aria-label="Save Second Life Trousers"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Second Life Trousers</h3>
+                                <p class="cat-origin">Woven from 2 donated denim pairs</p>
+                                <p class="cat-price">&#8377;3,299 <s>&#8377;5,200 new</s></p>
+                                <p class="cat-impact">Plants 2 trees &middot; Sizes S&ndash;2XL</p>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Mended leather boots">
+                                    <span class="cat-badge alt">Repaired</span>
+                                    <button class="cat-save" type="button" aria-label="Save Mended Leather Boots"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Mended Leather Boots</h3>
+                                <p class="cat-origin">Resoled and recoloured, Kanpur workshop</p>
+                                <p class="cat-price">&#8377;5,899 <s>&#8377;9,900 new</s></p>
+                                <p class="cat-impact">Plants 1 tree &middot; UK 4&ndash;9</p>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Patchwork shirt">
+                                    <span class="cat-badge alt">Patchwork</span>
+                                    <button class="cat-save" type="button" aria-label="Save Offcut Patchwork Shirt"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Offcut Patchwork Shirt</h3>
+                                <p class="cat-origin">Cut from 11 cotton offcuts, no two alike</p>
+                                <p class="cat-price">&#8377;1,899 <s>&#8377;3,000 new</s></p>
+                                <p class="cat-impact">Plants 2 trees &middot; Sizes S&ndash;XL</p>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Overdyed slip dress">
+                                    <span class="cat-badge alt">Overdyed</span>
+                                    <button class="cat-save" type="button" aria-label="Save Indigo Overdyed Slip"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Indigo Overdyed Slip</h3>
+                                <p class="cat-origin">Stained original, redyed with plant indigo</p>
+                                <p class="cat-price">&#8377;2,150 <s>&#8377;3,600 new</s></p>
+                                <p class="cat-impact">Plants 1 tree &middot; Sizes XS&ndash;M</p>
+                            </article>
+                        </div>
+
+                        <div class="col-12">
+                            <aside class="grid-donate-banner">
+                                <div>
+                                    <h3>Your wardrobe is our raw material</h3>
+                                    <p>We're short on cotton shirts and winter knits this month. Send yours and we'll put your name on the next batch.</p>
+                                </div>
+                                <a href="donate.html" class="btn-on-dark">Donate clothes</a>
+                            </aside>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Recovered fibre overcoat">
+                                    <span class="cat-badge">Remade</span>
+                                    <button class="cat-save" type="button" aria-label="Save Long Recovery Overcoat"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Long Recovery Overcoat</h3>
+                                <p class="cat-origin">Woven from 6 donated blankets and coats</p>
+                                <p class="cat-price">&#8377;6,499 <s>&#8377;11,200 new</s></p>
+                                <p class="cat-impact">Plants 6 trees &middot; Sizes M&ndash;2XL</p>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Cardigan from recovered wool">
+                                    <span class="cat-badge">Remade</span>
+                                    <button class="cat-save" type="button" aria-label="Save Winter Recovery Cardigan"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Winter Recovery Cardigan</h3>
+                                <p class="cat-origin">Woven from 3 donated jumpers, Ludhiana</p>
+                                <p class="cat-price">&#8377;3,450 <s>&#8377;5,800 new</s></p>
+                                <p class="cat-impact">Plants 3 trees &middot; Sizes S&ndash;XL</p>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Mended work trousers">
+                                    <span class="cat-badge alt">Repaired</span>
+                                    <button class="cat-save" type="button" aria-label="Save Visible Mend Work Trousers"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Visible Mend Work Trousers</h3>
+                                <p class="cat-origin">Sashiko-stitched knee repair, one pair only</p>
+                                <p class="cat-price">&#8377;1,750 <s>&#8377;3,400 new</s></p>
+                                <p class="cat-impact">Plants 1 tree &middot; Size 32 only</p>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Remade summer dress">
+                                    <span class="cat-badge">Remade</span>
+                                    <button class="cat-save" type="button" aria-label="Save Monsoon Remade Dress"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Monsoon Remade Dress</h3>
+                                <p class="cat-origin">Woven from 2 donated cotton kurtas</p>
+                                <p class="cat-price">&#8377;2,899 <s>&#8377;4,700 new</s></p>
+                                <p class="cat-impact">Plants 2 trees &middot; Sizes XS&ndash;L</p>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Scarf from loom waste">
+                                    <span class="cat-badge alt">Patchwork</span>
+                                    <button class="cat-save" type="button" aria-label="Save Loom Waste Scarf"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Loom Waste Scarf</h3>
+                                <p class="cat-origin">Woven entirely from mill floor sweepings</p>
+                                <p class="cat-price">&#8377;899 <s>&#8377;1,600 new</s></p>
+                                <p class="cat-impact">Plants 1 tree &middot; One size</p>
+                            </article>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <article class="cat-card">
+                                <div class="cat-thumb">
+                                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Resoled everyday shoes">
+                                    <span class="cat-badge alt">Repaired</span>
+                                    <button class="cat-save" type="button" aria-label="Save Resoled Everyday Shoe"><i class="bi bi-heart"></i></button>
+                                </div>
+                                <h3 class="cat-name">Resoled Everyday Shoe</h3>
+                                <p class="cat-origin">New cork sole on a donated upper</p>
+                                <p class="cat-price">&#8377;2,999 <s>&#8377;6,200 new</s></p>
+                                <p class="cat-impact">Plants 1 tree &middot; UK 5&ndash;10</p>
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <nav aria-label="Catalogue pagination" class="catalogue-pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
+                            <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <section class="standards-section">
+                <h2 class="section-title">What each renewal method means</h2>
+                <p class="section-lede standards-lede">Every product page states which of these four routes the piece went through, and how many donated garments went into it.</p>
+                <div class="table-wrapper">
+                    <table class="data-table standards-table">
+                        <caption class="visually-hidden">Comparison of Santra's four garment renewal methods</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Method</th>
+                                <th scope="col">What happens</th>
+                                <th scope="col">Fibre recovered</th>
+                                <th scope="col">Trees per piece</th>
+                                <th scope="col">Warranty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Remade</th>
+                                <td>Shredded to fibre, re-spun into yarn, rewoven into new cloth</td>
+                                <td>92%</td>
+                                <td>2&ndash;6</td>
+                                <td>3 years</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Repaired</th>
+                                <td>Cleaned, restitched, resoled or rezipped and sold as it is</td>
+                                <td>100%</td>
+                                <td>1</td>
+                                <td>2 years</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Overdyed</th>
+                                <td>Stained or faded pieces redyed with plant dyes to even the colour</td>
+                                <td>100%</td>
+                                <td>1</td>
+                                <td>2 years</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patchwork</th>
+                                <td>Cutting-room offcuts pieced into one-of-one garments</td>
+                                <td>88%</td>
+                                <td>1&ndash;2</td>
+                                <td>3 years</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid row g-4">
+            <div class="col-6 col-lg-3">
+                <h4 class="footer-head">Donate</h4>
+                <ul class="footer-list">
+                    <li><a href="donate.html">Book a pickup</a></li>
+                    <li><a href="donate.html#centres">Drop-off centres</a></li>
+                    <li><a href="donate.html#accepted">What we accept</a></li>
+                    <li><a href="sustainability.html#calculator">Your impact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h4 class="footer-head">Shop Renewed</h4>
+                <ul class="footer-list">
+                    <li><a href="catalogue.html">Full catalogue</a></li>
+                    <li><a href="catalogue.html">New in</a></li>
+                    <li><a href="catalogue.html">Renewal standards</a></li>
+                    <li><a href="register.html">Join the club</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h4 class="footer-head">The Brand</h4>
+                <ul class="footer-list">
+                    <li><a href="sustainability.html">Our impact</a></li>
+                    <li><a href="sustainability.html#sourcing">Where we work</a></li>
+                    <li><a href="sustainability.html#milestones">Our story</a></li>
+                    <li><a href="login.html">Client sign in</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 footer-signup">
+                <h4 class="footer-head">Plant With Us</h4>
+                <p class="footer-note">Get a note whenever your donated pieces are renewed and your trees go in the ground.</p>
+                <label for="footerEmail" class="visually-hidden">Email address</label>
+                <input type="email" id="footerEmail" class="form-control mb-2" placeholder="Email address">
+                <button class="btn-leaf w-100" type="button">Keep me posted</button>
+            </div>
+        </div>
+        <div class="footer-base">
+            <p class="copyright">&copy; 2026 Santra. Every garment donated plants a tree in your name.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="catalogue.js"></script>
+</body>
+</html>
